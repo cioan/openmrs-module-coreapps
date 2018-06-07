@@ -630,6 +630,7 @@ span.field-error {
                                                             formFieldName: "providerAttributeId_" + attribute.providerAttributeId,
                                                             label: attribute.attributeType.name,
                                                             defaultDate: formatter.parse(attribute.valueReference),
+                                                            endDate: editDateFormat.format(new Date()),
                                                             useTime: false,
                                                 ])}
                                                 <% } else if ( attribute.attributeType.datatypeClassname == 'org.openmrs.module.coreapps.customdatatype.CodedConceptDatatype' ) { %>
@@ -657,6 +658,7 @@ span.field-error {
                                                         id: "attributeTypeId_" + attributeType.providerAttributeTypeId,
                                                         formFieldName: "attributeTypeId_" + attributeType.providerAttributeTypeId,
                                                         label: attributeType.name,
+                                                        endDate: editDateFormat.format(new Date()),
                                                         useTime: false,
                                                 ])}
                                             </div>
